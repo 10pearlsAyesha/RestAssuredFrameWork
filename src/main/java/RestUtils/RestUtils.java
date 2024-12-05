@@ -1,4 +1,4 @@
-package utils;
+package RestUtils;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -10,18 +10,6 @@ public class RestUtils {
     // Implement REST API calls here
     // Example: GET, POST, PUT, DELETE methods
 
-    public static Response performPost(String endPoint, Map <String,Object> requestPayload, Map<String, String> headers) {
-        return RestAssured.given().log().all()
-                .baseUri(endPoint)
-                .contentType(ContentType.JSON)
-                .headers(headers)
-                .body(requestPayload)
-                .post()
-                .then()
-                //.statusCode(200) // Assert status code is 200
-                .log().all().extract().response();
-
-    }
     public static Response performPost(String endPoint, String requestPayload, Map<String, String> headers) {
         return RestAssured.given().log().all()
                 .baseUri(endPoint)
@@ -29,12 +17,18 @@ public class RestUtils {
                 .headers(headers)
                 .body(requestPayload)
                 .post()
-                .then()
-                //.statusCode(200) // Assert status code is 200
-                .log().all().extract().response();
-
+                .then().log().all().extract().response();
     }
-    // Perform GET Request
+
+    public static Response performPost(String endPoint, Map <String, Object> requestPayload, Map<String, String> headers) {
+        return RestAssured.given().log().all()
+                .baseUri(endPoint)
+                .contentType(ContentType.JSON)
+                .headers(headers)
+                .body(requestPayload)
+                .post()
+                .then().log().all().extract().response();
+    }
     public static Response performGet(String endPoint, Map<String, String> headers) {
         return RestAssured.given().log().all()
                 .baseUri(endPoint)
