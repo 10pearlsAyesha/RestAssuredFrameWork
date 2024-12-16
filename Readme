@@ -1,0 +1,9 @@
+To Run the test using Terminal:
+mvn clean compile
+
+mvn verify
+
+To Generate the Test Report:
+allure generate
+//Open the report
+allure serve target/allure-results

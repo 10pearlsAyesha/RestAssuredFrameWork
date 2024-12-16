@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4030","createAirLineTest","Default Suite","Mon Nov 18 16:14:14 PKT 2024","passed","Mon Nov 18 16:14:18 PKT 2024","airlinesApiTests.AirlineTests","RestAssuredTraining","airlinesApiTests.AirlineTests","createAirLineTest"
+"","5685","getAirlinesByID","Default Suite","Fri Dec 06 16:03:06 PKT 2024","passed","Fri Dec 06 16:03:12 PKT 2024","airlinesApiTests.AirlineTests","RestAssuredTraining","airlinesApiTests.AirlineTests","getAirlinesByID"
+"","3452","createAirLineTestWithMap","Default Suite","Thu Nov 28 16:22:48 PKT 2024","passed","Thu Nov 28 16:22:51 PKT 2024","airlinesApiTests.AirlineTests","RestAssuredTraining","airlinesApiTests.AirlineTests","createAirLineTestWithMap"
