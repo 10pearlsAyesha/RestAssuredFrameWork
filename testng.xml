@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/siraj.munir/RestAssuredTraining">
+    <test verbose="2" preserve-order="true" name="D:\RestAssuredAutomation\RestAssuredTraining">
         <classes>
             <class name="airlinesApiTests.AirlineTests">
                 <methods>
@@ -10,6 +10,14 @@
                     <include name="getAirlinesByID"/>
                     <include name="createAirLineTestWithPojo"/>
                     <include name="createAirLineTestWithJavaFaker"/>
+                </methods>
+            </class>
+            <class name="airlinesApiTests.PassengerAPITests">
+                <methods>
+                <include name="createPassenger"/>
+                    <include name="readPassenger"/>
+                    <include name="updatePassengerName"/>
+                    <include name="deletePassenger"/>
                 </methods>
             </class>
         </classes>
